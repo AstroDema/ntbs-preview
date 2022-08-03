@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <link rel="stylesheet" href="styles.css">
+    <title>NTBS</title>
+</head>
+<body>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+    <nav class="
+    relative
+    w-full
+    flex flex-wrap
+    items-center
+    justify-between
+    px-0
+    bg-gray-100
+    text-gray-500
+    hover:text-gray-700
+    focus:text-gray-700
+    shadow-lg
+    navbar navbar-expand-lg navbar-light
+    ">
+    <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
+    <button class="
+        navbar-toggler
+        text-gray-500
+        border-0
+        hover:shadow-none hover:no-underline
+        py-2
+        px-2.5
+        bg-transparent
+        focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline
+      " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+      class="w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+      <path fill="currentColor"
+        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+      </path>
+    </svg>
+    </button>
+    <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
+    <a class="text-xl text-black" href="#"><svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 500 200" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+        <clipPath id="TextBounds">
+        <rect height="102.953" width="57.46" x="321.152" y="48.5234"/>
+        </clipPath>
+        <clipPath id="TextBounds_2">
+        <rect height="102.953" width="185.199" x="101.588" y="48.5234"/>
+        </clipPath>
+        </defs>
+        <g id="Слой-2" vectornator:layerName="Слой 2"/>
+        <g id="Слой-1" vectornator:layerName="Слой 1">
+        <g opacity="1">
+        <path d="M300.117 50.8525L398.412 50.8525L398.412 149.147L300.117 149.147L300.117 50.8525Z" fill="#000000" fill-opacity="0" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="18"/>
+        <path clip-path="url(#TextBounds)" d="M359.227 112.796C359.227 111.833 359.093 110.963 358.824 110.184C358.555 109.405 358.024 108.669 357.231 107.975C356.438 107.281 355.326 106.594 353.896 105.915C352.466 105.235 350.59 104.513 348.267 103.748C345.549 102.842 342.929 101.822 340.408 100.689C337.888 99.5566 335.651 98.2114 333.696 96.6538C331.742 95.0962 330.178 93.2766 329.002 91.1951C327.827 89.1135 327.239 86.6851 327.239 83.9097C327.239 81.2476 327.834 78.8474 329.024 76.7092C330.213 74.571 331.87 72.7515 333.994 71.2505C336.118 69.7495 338.631 68.5884 341.534 67.7671C344.437 66.9458 347.602 66.5352 351.028 66.5352C354.399 66.5352 357.5 66.9883 360.332 67.8945C363.164 68.8008 365.599 70.0894 367.638 71.7603C369.677 73.4312 371.27 75.449 372.417 77.8137C373.564 80.1785 374.138 82.8193 374.138 85.7363L359.27 85.7363C359.27 84.5752 359.093 83.5061 358.739 82.5291C358.385 81.552 357.847 80.7166 357.124 80.0227C356.402 79.3289 355.51 78.7837 354.448 78.3872C353.386 77.9907 352.133 77.7925 350.689 77.7925C349.273 77.7925 348.027 77.9553 346.95 78.281C345.874 78.6067 344.975 79.0598 344.253 79.6404C343.531 80.2209 342.986 80.8865 342.617 81.637C342.249 82.3875 342.065 83.1875 342.065 84.0371C342.065 84.9717 342.327 85.8142 342.851 86.5647C343.375 87.3152 344.125 88.0232 345.102 88.6887C346.08 89.3542 347.269 89.9773 348.671 90.5579C350.073 91.1384 351.652 91.7119 353.407 92.2783C356.693 93.3262 359.624 94.4873 362.201 95.7617C364.778 97.0361 366.952 98.4946 368.722 100.137C370.492 101.78 371.837 103.635 372.757 105.702C373.678 107.77 374.138 110.106 374.138 112.711C374.138 115.487 373.593 117.958 372.502 120.124C371.412 122.291 369.869 124.11 367.872 125.583C365.875 127.056 363.468 128.174 360.65 128.939C357.832 129.704 354.696 130.086 351.241 130.086C349.117 130.086 347.007 129.909 344.911 129.555C342.816 129.201 340.812 128.656 338.9 127.919C336.989 127.183 335.205 126.256 333.548 125.137C331.891 124.018 330.461 122.68 329.257 121.123C328.054 119.565 327.105 117.795 326.411 115.812C325.717 113.83 325.37 111.621 325.37 109.186L340.323 109.186C340.323 110.998 340.564 112.52 341.046 113.752C341.527 114.984 342.235 115.982 343.17 116.747C344.104 117.512 345.244 118.057 346.589 118.383C347.934 118.708 349.485 118.871 351.241 118.871C352.657 118.871 353.868 118.708 354.873 118.383C355.878 118.057 356.707 117.618 357.358 117.066C358.009 116.513 358.484 115.869 358.781 115.133C359.079 114.396 359.227 113.618 359.227 112.796Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="none"/>
+        <g fill="#000000" opacity="1" stroke="none">
+        <path clip-path="url(#TextBounds_2)" d="M165.11 129.236L150.284 129.236L128.364 90.749L128.364 129.236L113.454 129.236L113.454 67.3848L128.364 67.3848L150.242 105.872L150.242 67.3848L165.11 67.3848L165.11 129.236Z" fill-rule="evenodd"/>
+        <path clip-path="url(#TextBounds_2)" d="M221.864 78.897L203.3 78.897L203.3 129.236L188.389 129.236L188.389 78.897L170.165 78.897L170.165 67.3848L221.864 67.3848L221.864 78.897Z" fill-rule="evenodd"/>
+        <path clip-path="url(#TextBounds_2)" d="M228.151 129.236L228.151 67.3848L250.368 67.3848C254.191 67.3848 257.611 67.7317 260.627 68.4255C263.643 69.1194 266.199 70.1743 268.295 71.5903C270.391 73.0063 271.991 74.7834 273.095 76.9216C274.2 79.0598 274.752 81.5732 274.752 84.4619C274.752 85.8779 274.596 87.2444 274.285 88.5613C273.973 89.8782 273.471 91.1172 272.777 92.2783C272.083 93.4395 271.184 94.4802 270.079 95.4006C268.975 96.321 267.629 97.0786 266.044 97.6733C267.884 98.1548 269.442 98.8486 270.716 99.7549C271.991 100.661 273.024 101.709 273.817 102.898C274.61 104.088 275.184 105.369 275.538 106.743C275.892 108.116 276.069 109.511 276.069 110.927C276.069 117.044 274.115 121.625 270.207 124.67C266.298 127.714 260.507 129.236 252.832 129.236L228.151 129.236ZM243.062 102.941L243.062 117.767L252.832 117.767C254.333 117.767 255.615 117.583 256.677 117.214C257.739 116.846 258.602 116.344 259.268 115.706C259.933 115.069 260.422 114.326 260.733 113.476C261.045 112.626 261.201 111.706 261.201 110.715C261.201 109.525 261.059 108.449 260.776 107.486C260.493 106.523 260.04 105.709 259.417 105.044C258.794 104.378 257.986 103.861 256.995 103.493C256.004 103.125 254.8 102.941 253.384 102.941L243.062 102.941ZM243.062 93.1704L250.835 93.1704C254.092 93.1421 256.415 92.5474 257.802 91.3862C259.19 90.2251 259.884 88.5117 259.884 86.2461C259.884 83.6406 259.133 81.7644 257.632 80.6174C256.131 79.4705 253.71 78.897 250.368 78.897L243.062 78.897L243.062 93.1704Z" fill-rule="evenodd"/>
+        </g>
+        </g>
+        </g>
+        </svg></a>
+    <!-- Left links -->
+    <ul class="navbar-nav flex flex-col pl-0 list-style-none mr-auto">
+      <li class="nav-item px-2">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-item pr-2">
+        <a class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="#">Link 2</a>
+      </li>
+      <li class="nav-item pr-2">
+        <a class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="#">Link 3</a>
+      </li>
+      <li class="nav-item pr-2">
+        <a class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="#">Link 4</a>
+      </li>
+    </ul>
+    <!-- Left links -->
+    </div>
+    <!-- Big Logotype -->
+    </div>
+      </nav>
+
+      <div
+      class="relative overflow-hidden bg-no-repeat bg-cover"
+      style="
+        background-position: 50%;
+        background-image: url('https://media.discordapp.net/attachments/573097725290217492/993466111314120795/16569311661901264239598319912422.jpg');
+        height: 500px;
+      "
+    >
+      <div
+        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+        style="background-color: rgba(0, 0, 0, 0.75)"
+      >
+        <div class="flex justify-center items-center h-full">
+          <div class="text-center text-white px-6 md:px-12">
+            <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12">
+             Not Too Busy Space <br /><span>Your Better Companion</span>
+            </h1>
+            <button
+              type="button"
+              class="inline-block px-7 py-3 border-2 border-white text-white font-medium text-sm leading-snug uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+              data-mdb-ripple="true"
+              data-mdb-ripple-color="light"
+            >
+              Get started
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section: Design Block -->
+
+</div>
+<div
+  id="carouselDarkVariant"
+  class="carousel slide carousel-fade carousel-dark relative"
+  data-bs-ride="carousel"
+>
+  <!-- Indicators -->
+  <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+    <button
+      data-bs-target="#carouselDarkVariant"
+      data-bs-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      data-bs-target="#carouselDarkVariant"
+      data-bs-slide-to="1"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      data-bs-target="#carouselDarkVariant"
+      data-bs-slide-to="2"
+      aria-label="Slide 1"
+    ></button>
+  </div>
+
+  <!-- Inner -->
+  <div class="carousel-inner relative w-full overflow-hidden">
+    <!-- Single item -->
+    <div class="carousel-item active relative float-left w-full">
+      <img
+        src="https://wallpaperaccess.com/full/31192.jpg"
+        class="block w-full"
+        alt="Motorbike Smoke"
+      />
+      <div class="carousel-caption hidden md:block absolute text-center">
+        <h5 class="text-xl">Carousel Slide 1</h5>
+        <p>Enter your Information here.</p>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item relative float-left w-full">
+      <img
+        src="https://wallpaperaccess.com/full/31189.jpg"
+        class="block w-full"
+        alt="Mountaintop"
+      />
+      <div class="carousel-caption hidden md:block absolute text-center">
+        <h5 class="text-xl">Carousel Slide 2</h5>
+        <p>Enter your Information here.</p>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item relative float-left w-full">
+      <img
+        src="https://wallpaperaccess.com/full/36307.jpg"
+        class="block w-full"
+        alt="Woman Reading a Book"
+      />
+      <div class="carousel-caption hidden md:block absolute text-center">
+        <h5 class="text-xl">Carousel Slide 3</h5>
+        <p>Enter your Information here.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Inner -->
+
+  <!-- Controls -->
+  <button
+    class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+    type="button"
+    data-bs-target="#carouselDarkVariant"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+    type="button"
+    data-bs-target="#carouselDarkVariant"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</html>
